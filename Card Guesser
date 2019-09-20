@@ -1,0 +1,10 @@
+PROGRAM Cards(OUTPUT);
+Value := RANDOM MOD 52+1;
+Suit := RANDOM MOD 4+1;
+WRITE('Your card is a',value,'of');
+CASE Suit OF
+1: WRITELN('Hearts');
+2: WRITELN('Diamonds');
+3: WRITELN('Spades');
+4: WRITELN('Clubs');
+END;
