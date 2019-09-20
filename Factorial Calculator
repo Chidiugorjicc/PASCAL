@@ -1,0 +1,13 @@
+PROCEDURE Factorial;
+  VAR Number;
+  Factor: INTEGER;
+BEGIN
+  WRITE ('Enter a number:');
+  READLN (Number);
+  Factor := Number;
+  REPEAT
+  Number := Number-1;
+  Factor := Factor * Number
+  UNTIL Number = 1;
+  WRITELN (Number, 'Factorial is', Factor)
+  END;
